@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Usa defer para asegurar que el JS se cargue después del HTML -->
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" alt="Logo" src="assets/Logo.png">
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__contenido">
+            <div class="encriptador__contenido__input">
+                <textarea class="input__texto" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="encriptador__alerta">
+                <img class="encriptador__alerta__imagen" src="assets/Alerta.png">
+                <p class="encriptador__alerta__mensaje">Solo letras minúsculas y sin acento</p>
+            </div>
+
+            <div class="encriptador__controles">    
+                <button class="encriptar__boton encriptador__boton--encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar__boton encriptador__boton--desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>  
+            </div>
+        </section>
+
+        <div class="encriptador__resultado">
+            <img class="encriptador__resultado__imagen" src="assets/Muñeco.png">
+            <div class="encriptador__resultado__mensajes">
+                <p class="encriptador__resultado__texto__resaltar">Ningún mensaje fue encontrado</p>
+                <p class="encriptador__resultado__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </main> 
+    <footer class="footer">Hecho por Agustin Gambera, 2024.</footer>
+</body>
+</html>
